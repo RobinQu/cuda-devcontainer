@@ -28,6 +28,6 @@
     },
     "remoteUser": "root",
     "mounts": [
-        {"source": "/workspace/dropbox", "target": "/dropbox", "type": "volume"}
+        {"source": "/workspace/dropbox", "target": "/dropbox", "type": "bind"}
     ]
   }
