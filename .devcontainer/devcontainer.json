@@ -1,5 +1,5 @@
 {
-    "name": "CUDA",
+    "name": "cuda-117",
     "image": "nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04",
     "runArgs": [
       "--gpus=all"
@@ -14,9 +14,9 @@
       "nvidia-smi"
     ],
     "remoteUser": "root",
-    "workspaceMount": "source=/workspace/devcontainer/cuda,target=/workspace,type=bind,consistency=cached",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/devcontainer/cuda,type=bind,consistency=cached",
     "workspaceFolder": "/workspace",
     "mounts": [
-        {"source": "/workspace/dropbox", "target": "/dropbox", "type": "bind"}
+        {"source": "/workspace", "target": "/workspace", "type": "bind"}
     ]
   }
