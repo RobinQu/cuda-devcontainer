@@ -15,7 +15,7 @@
     ],
     "remoteUser": "root",
     "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/devcontainer/cuda,type=bind,consistency=cached",
-    "workspaceFolder": "/workspace",
+    "workspaceFolder": "/workspace/devcontainer/cuda",
     "mounts": [
         {"source": "/workspace", "target": "/workspace", "type": "bind"}
     ]
