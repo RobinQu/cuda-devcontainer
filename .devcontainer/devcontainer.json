@@ -1,6 +1,6 @@
 {
     "name": "CUDA",
-    "image": "nvidia/cuda:12.5.0-devel-ubuntu22.04",
+    "image": "nvidia/cuda:11.7.1-cudnn8-devel-ubuntu22.04",
     "runArgs": [
       "--gpus=all"
     ],
@@ -13,20 +13,9 @@
     "postCreateCommand": [
       "nvidia-smi"
     ],
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "ms-python.python",
-          "ms-toolsai.jupyter",
-          "ms-toolsai.vscode-jupyter-cell-tags",
-          "ms-toolsai.jupyter-keymap",
-          "ms-toolsai.jupyter-renderers",
-          "ms-toolsai.vscode-jupyter-slideshow",
-          "ms-python.vscode-pylance"
-        ]
-      }
-    },
     "remoteUser": "root",
+    "workspaceMount": "source=/workspace/devcontainer/cuda,target=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
     "mounts": [
         {"source": "/workspace/dropbox", "target": "/dropbox", "type": "bind"}
     ]
