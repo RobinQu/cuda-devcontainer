@@ -13,5 +13,5 @@ echo "export PATH=/root/miniconda3/bin:\$PATH" >> /root/.bashrc
 
 source /root/.bashrc
 
-conda create -y --name instinct-cpp -c conda-forge python=3.11 conan cmake gcc=12 gxx=12
+/root/miniconda3/bin/conda create -y --name instinct-cpp -c conda-forge python=3.11 conan cmake gcc=12 gxx=12
 echo "conda activate instinct-cpp" >> /root/.bashrc
