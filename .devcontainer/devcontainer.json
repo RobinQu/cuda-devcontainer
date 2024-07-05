@@ -1,5 +1,5 @@
 {
-    "name": "cuda-117",
+    "name": "cuda-124",
     "image": "nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04",
     "runArgs": [
       "--gpus=all"
