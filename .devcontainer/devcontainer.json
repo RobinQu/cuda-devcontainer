@@ -14,8 +14,8 @@
       "nvidia-smi"
     ],
     "remoteUser": "root",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/devcontainer/cuda,type=bind,consistency=cached",
-    "workspaceFolder": "/workspace/devcontainer/cuda",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/devcontainer/cuda-124,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace/devcontainer/cuda-124",
     "mounts": [
         {"source": "/workspace", "target": "/workspace", "type": "bind"}
     ]
